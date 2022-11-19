@@ -1,15 +1,27 @@
-package day20accessmodifiersinheritance;
+package day24interfaces;
 
-public class Honda extends Car {
+public class Honda implements Ac, Brake, Engine{
 
-
-    public void hondaMake() {
-        System.out.println("This car was made in Honda Factory");
+    @Override
+    public void digital() {
+        System.out.println("This is digital AC");
     }
 
-    public Honda() {
-        System.out.println("Honda class constructor 1");
-
+    @Override
+    public void secureBrake() {
+        System.out.println("It stops securely");
 
     }
+
+    @Override
+    public void ecoEngine() {
+
+    }
+
+    @Override
+    public void price() {
+        System.out.println("Ac price");
+    }
+
+
 }
